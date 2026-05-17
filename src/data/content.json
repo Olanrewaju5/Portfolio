@@ -1,0 +1,151 @@
+{
+  "title": "Abdulyaqeen Abdulquddus",
+  "author": "Abdulquddus",
+  "spreads": [
+    {
+      "id": 0,
+      "left": {
+        "type": "cover",
+        "background": "#f8f4ec",
+        "texture": true,
+        "content": {
+          "title": "Abdulyaqeen",
+          "subtitle": "Abdulquddus",
+          "credits": [
+            { "label": "Art direction", "value": "Abdulquddus" },
+            { "label": "Photography", "value": "Abdulquddus" },
+            { "label": "UX Writer", "value": "Abdulquddus" }
+          ]
+        }
+      },
+      "right": {
+        "type": "photo",
+        "background": "#ffffff",
+        "texture": false,
+        "content": {
+          "src": "/images/profile.jpg",
+          "alt": "Abdulquddus",
+          "caption": "Holla! I'm Abdulquddus"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "left": {
+        "type": "blank",
+        "background": "#f8f4ec",
+        "texture": true,
+        "content": {
+          "decorative": true
+        }
+      },
+      "right": {
+        "type": "text",
+        "background": "#ffffff",
+        "texture": false,
+        "content": {
+          "blocks": [
+            {
+              "heading": "Who I Am",
+              "body": "I'm a creative developer and designer who lives at the intersection of code and aesthetics. I build digital experiences that feel intentional, memorable, and human."
+            },
+            {
+              "body": "Born curious. Raised on the internet. Trained in the craft of making things that matter — from pixel-perfect interfaces to systems that scale."
+            }
+          ],
+          "pullQuote": "I don't just build products. I build presence."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "left": {
+        "type": "text",
+        "background": "#f8f4ec",
+        "texture": true,
+        "content": {
+          "blocks": [
+            {
+              "heading": "The Work",
+              "body": "Five years of shipping — from scrappy startups to scaled platforms. Every project leaves a fingerprint of intention: clean code, clear purpose, zero compromise on the experience."
+            },
+            {
+              "body": "I specialise in frontend architecture, design systems, and the kind of interaction design that makes people pause and say: 'how did they do that?'"
+            }
+          ]
+        }
+      },
+      "right": {
+        "type": "skills",
+        "background": "#ffffff",
+        "texture": false,
+        "content": {
+          "heading": "Craft & Tools",
+          "skills": [
+            { "name": "React / Next.js", "level": 5, "category": "Frontend" },
+            { "name": "TypeScript", "level": 5, "category": "Frontend" },
+            { "name": "Framer Motion", "level": 4, "category": "Animation" },
+            { "name": "Figma", "level": 5, "category": "Design" },
+            { "name": "Node.js", "level": 4, "category": "Backend" },
+            { "name": "UI / UX Design", "level": 5, "category": "Design" },
+            { "name": "Three.js / WebGL", "level": 3, "category": "3D / Visual" },
+            { "name": "PostgreSQL", "level": 4, "category": "Backend" }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "left": {
+        "type": "timeline",
+        "background": "#f8f4ec",
+        "texture": true,
+        "content": {
+          "heading": "Journey",
+          "items": [
+            {
+              "year": "2025",
+              "role": "Senior Product Engineer",
+              "place": "Remote — Global",
+              "description": "Leading frontend at a Series B SaaS platform. Design system owner, performance guardian."
+            },
+            {
+              "year": "2023",
+              "role": "Full-Stack Engineer",
+              "place": "Lagos, NG",
+              "description": "Built and shipped three client products. Zero to production in each case."
+            },
+            {
+              "year": "2021",
+              "role": "UI/UX Designer + Developer",
+              "place": "Freelance",
+              "description": "Found the intersection of craft and code. Never looked back."
+            },
+            {
+              "year": "2019",
+              "role": "Computer Science",
+              "place": "University",
+              "description": "Where the obsession with building things became official."
+            }
+          ]
+        }
+      },
+      "right": {
+        "type": "contact",
+        "background": "#ffffff",
+        "texture": false,
+        "content": {
+          "heading": "Let's Talk",
+          "email": "hello@abdulquddus.com",
+          "links": [
+            { "label": "GitHub", "url": "https://github.com" },
+            { "label": "LinkedIn", "url": "https://linkedin.com" },
+            { "label": "Twitter / X", "url": "https://x.com" },
+            { "label": "Dribbble", "url": "https://dribbble.com" }
+          ],
+          "closing": "Currently open to select projects and full-time opportunities. If you're building something worth building — I want to hear about it."
+        }
+      }
+    }
+  ]
+}
