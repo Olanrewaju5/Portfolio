@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import type { Spread } from "@/lib/types";
 import { PageRenderer } from "@/components/pages/PageRenderer";
@@ -45,15 +46,30 @@ export function MobileBook({ spreads }: MobileBookProps) {
     <div className="min-h-screen px-5 py-24 space-y-6">
       {/* Mobile top bar */}
       <div
-        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full text-xs font-medium"
+        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-3 py-2 rounded-full"
         style={{
           background: "rgba(28,25,22,0.88)",
           backdropFilter: "blur(20px)",
-          color: "rgba(255,255,255,0.7)",
           border: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        Abdulyaqeen Abdulquddus
+        <span className="text-xs font-medium" style={{ color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-inter)" }}>
+          Abdulquddus
+        </span>
+        <div style={{ width: 1, height: 12, background: "rgba(255,255,255,0.2)" }} />
+        <Link
+          href="/playground"
+          style={{
+            fontSize: 11,
+            fontWeight: 500,
+            color: "rgba(255,255,255,0.55)",
+            fontFamily: "var(--font-inter)",
+            textDecoration: "none",
+            letterSpacing: "-0.2px",
+          }}
+        >
+          Playground ↗
+        </Link>
       </div>
 
       {spreads.map((spread, si) => (

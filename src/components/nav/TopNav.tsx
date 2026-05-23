@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 interface TopNavProps {
   soundEnabled: boolean;
@@ -9,12 +10,13 @@ interface TopNavProps {
   totalSpreads: number;
 }
 
-const NAV_ITEMS = ["About", "Work", "Contact"];
+const NAV_ITEMS = ["About", "Work", "Contact", "Playground"];
 
 export function TopNav({ soundEnabled, onToggleSound, spreadIndex, totalSpreads }: TopNavProps) {
   const [activeNav, setActiveNav] = useState("About");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [_menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <header className="fixed top-[14px] left-1/2 -translate-x-1/2 z-50 hidden md:block">
@@ -95,7 +97,15 @@ export function TopNav({ soundEnabled, onToggleSound, spreadIndex, totalSpreads 
               {NAV_ITEMS.map((item) => (
                 <button
                   key={item}
-                  onClick={() => { setActiveNav(item); setDropdownOpen(false); }}
+                  onClick={() => {
+                    if (item === "Playground") {
+                      setDropdownOpen(false);
+                      router.push("/playground");
+                    } else {
+                      setActiveNav(item);
+                      setDropdownOpen(false);
+                    }
+                  }}
                   className="w-full px-4 py-2 text-left text-sm transition-colors duration-150"
                   style={{
                     color: activeNav === item ? "#f6f5f5" : "rgba(246,245,245,0.5)",
@@ -106,6 +116,9 @@ export function TopNav({ soundEnabled, onToggleSound, spreadIndex, totalSpreads 
                   }}
                 >
                   {item}
+                  {item === "Playground" && (
+                    <span style={{ marginLeft: 6, fontSize: 10, opacity: 0.45, letterSpacing: "0.5px", textTransform: "uppercase" }}>↗</span>
+                  )}
                 </button>
               ))}
               {/* Sound toggle inside dropdown */}
